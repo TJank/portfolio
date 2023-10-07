@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/ff-unit-pro');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url(https://db.onlinewebfonts.com/c/ba5f84e1e17764f232a419c072b58d46?family=Hydrophilia+Liquid);
+
+body {
+  /* height: calc(100vmax - 600px); */
+  /* height: max-content; */
+  background: linear-gradient(118deg, #F64A4B 0%, #6E0202 97.92%);
+  font-family: 'Inter', sans-serif;
+}
+
+/* min width 668px */
+@media (min-width: 768px) {
+  body {
+    height: calc(100vmax - 600px);
+  }
+}
+
+.font-ff {
+  font-family: 'FF Unit Rounded Pro', sans-serif !important;
+}
+
+.font-hl {
+  font-family: "Hydrophilia Liquid";
+}
+
+.clip {
+  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 95% 100%, 0% 100%);
+}
+
+.home-right-clip {
+  clip-path: polygon(5% 0, 100% 0, 100% 95%, 95% 100%, 0 100%, 0 5%);
+
+}
+
+.trans-50 {
+  transform: translate(-50%, -50%);
+}
+
+.gradient {
+  background: linear-gradient(118deg, #F64A4B 0%, #6E0202 97.92%);
+}
+
+.contact_form {
+  background: rgba(109, 1, 1, 0.15);
+  /* shadow-md */
+  box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.05), 0px 4px 6px -1px rgba(0, 0, 0, 0.10);
+}
+.divider_gradient{
+  background: var(--linear, linear-gradient(118deg, #F64A4B 0%, #6E0202 97.92%));
+}
