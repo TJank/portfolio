@@ -1,5 +1,5 @@
-import ContactForm from "../components/form/ContactForm";
-import bottomLine from '../assets/bottom-line.png'
+import ContactForm from "../../components/form/ContactForm";
+import bottomLine from '../../assets/bottom-line.png'
 
 export default function ContactScreen() {
   return (

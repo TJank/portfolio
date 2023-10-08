@@ -1,5 +1,5 @@
-import Left from '../components/home/Left'
-import Right from '../components/home/Right'
+import Left from '../../components/home/Left'
+import Right from '../../components/home/Right'
 
 
 export default function HomeScreen() {

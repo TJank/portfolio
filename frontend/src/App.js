@@ -1,32 +1,34 @@
-import './App.css';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'
-import Header from './components/Header';
-import Footer from './components/Footer';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
-import ContactScreen from './screens/HomeScreens/ContactScreen';
-import LandingScreen from './screens/HomeScreens/LandingScreen';
 import ServicesScreen from './screens/HomeScreens/ServicesScreen';
 import AboutScreen from './screens/HomeScreens/AboutScreen';
+import ContactScreen from './screens/HomeScreens/ContactScreen';
+import HomeScreen from "./screens/HomeScreens/HomeScreen";
+import MainLayout from "./components/common/MainLayout";
+import NotFoundScreen from "./screens/HomeScreens/NotFoundScreen";
 
 
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Header />
+    <BrowserRouter>
 
-      <main>
-          <Routes>
-            <Route exact path='/' element={<LandingScreen />} />
-            <Route path='/services' element={<ServicesScreen />} />
-            <Route path='/about' element={<AboutScreen />} />
-            <Route path='/contact' element={<ContactScreen />} />
-          </Routes>
-      </main>
 
-      <Footer />
-    </Router>
-  );
+      <Routes>
+        <Route path='/'>
+          <Route index element={<MainLayout><HomeScreen /></MainLayout>} />
+          <Route path='contact' element={<MainLayout><ContactScreen /></MainLayout>} />
+          <Route path='about' element={<MainLayout><AboutScreen /></MainLayout>} />
+          <Route path='services' element={<MainLayout><ServicesScreen /></MainLayout>} />
+          <Route path='*' element={<NotFoundScreen />} />
+        </Route>
+      </Routes>
+
+
+    </BrowserRouter >
+  )
 }
-
-export default App;

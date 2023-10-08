@@ -1,7 +1,7 @@
-import bottomLine from '../assets/bottom-line.png'
-import AboutCard from '../components/about/AboutCard'
-import AboutUs from '../components/about/AboutUs'
-import { aboutData } from '../constant/data'
+import bottomLine from '../../assets/bottom-line.png'
+import AboutCard from '../../components/about/AboutCard'
+import AboutUs from '../../components/about/AboutUs'
+import { aboutData } from '../../constant/data'
 
 export default function AboutScreen() {
   return (

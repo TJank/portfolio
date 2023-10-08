@@ -1,3 +1,8 @@
+
+import webDevelopemt from '../assets/icons/web-development.png'
+import dataScience from '../assets/icons/data-science.png'
+import testing from '../assets/icons/testing.png'
+
 export const aboutData = [
     {
         id: 1,
@@ -19,4 +24,25 @@ export const aboutData = [
         title: "Service",
         description: "At Janky Robotics, we take great pride in providing the best service possible, tailored to you and your unique needs. Our team goes above and beyond to ensure your satisfaction, putting your requirements and objectives at the forefront. We are dedicated to building long-term partnerships with our clients, supporting your growth and success with our unwavering commitment to excellence.",
     },
+]
+
+export const servicesData = [
+    {
+        id: 0,
+        title: "Custom Web Application",
+        description: "Unlock the full potential of your business with our custom-built, personalized, and full-stack web applications. Whether you need a simple business website, a robust e-commerce platform, or complex business operations services, we have the expertise to bring your vision to life. Contact us today, share your requirements, and let's embark on a journey of digital transformation together.",
+        image: webDevelopemt
+    },
+    {
+        id: 1,
+        title: "Machine Learning & Data Analysis",
+        description: "Gain valuable insights from your business, product, and customer data through our comprehensive machine learning and data analysis services. Our team dives deep into your data, providing you with actionable intelligence to enhance decision-making and optimize your strategies. Contact us now with a description of your requirements and ideal analysis, and let's connect to unlock the power of data-driven decision-making.",
+        image: dataScience
+    },
+    {
+        id: 2,
+        title: "Testing & Automation Solution",
+        description: "Testing & Automation Solutions Streamline your testing processes and reduce manual efforts with our cutting- edge testing and automation scripting solutions.We offer a comprehensive suite of automation testing tools, including smoke, regression, and visual testing.By leveraging continuous integration techniques, we ensure the highest quality and efficiency for your software development lifecycle.",
+        image: testing
+    }
 ]
