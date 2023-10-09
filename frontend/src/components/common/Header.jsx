@@ -24,7 +24,7 @@ export default function Header() {
             <img className="h-auto w-12 block md:hidden" src={mobileLogo} alt="" />
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        <div className="!flex lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -52,12 +52,12 @@ export default function Header() {
                 onMouseEnter={() => setPopoverVisible(true)}
                 onMouseLeave={() => setPopoverVisible(false)}
                 className="absolute left-0 top-full z-10 -mt-1 w-screen max-w-md overflow-hidden">
-                <div className="shadow-lg ring-1 ring-gray-900/5 mt-2 bg-[#1B0000] text-primary-200 text-center text-2xl leading-6 font-hl clip">
+                <div className="shadow-lg ring-1 ring-gray-900/5 mt-2 bg-[#1B0000] text-primary-200 text-center text-2xl leading-6 font-hl clip h-[133px]">
 
-                  <ul>
-                    <li className='p-2.5 cursor-pointer hover:bg-primary-100 transition-all duration-200 ease-linear'>Custom Web applications</li>
-                    <li className='p-2.5 cursor-pointer hover:bg-primary-100 transition-all duration-200 ease-linear'>Machine learning and data analysis</li>
-                    <li className='p-2.5 cursor-pointer hover:bg-primary-100 transition-all duration-200 ease-linear'>Testing and automation solutions</li>
+                  <ul className='flex flex-row flex-wrap'>
+                    <li className='w-full p-2.5 cursor-pointer hover:bg-primary-100 transition-all duration-200 ease-linear'>Custom Web applications</li>
+                    <li className='w-full p-2.5 cursor-pointer hover:bg-primary-100 transition-all duration-200 ease-linear'>Machine learning and data analysis</li>
+                    <li className='w-full p-2.5 cursor-pointer hover:bg-primary-100 transition-all duration-200 ease-linear'>Testing and automation solutions</li>
                   </ul>
                 </div>
               </div>
