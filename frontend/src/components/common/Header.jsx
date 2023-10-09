@@ -20,11 +20,11 @@ export default function Header() {
         <div className="flex">
           <Link to="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto hidden md:block" src={navIcon} alt="" />
-            <img className="h-auto w-12 block md:hidden" src={mobileLogo} alt="" />
+            <img className="h-8 w-auto hidden lg:block" src={navIcon} alt="" />
+            <img className="h-auto w-12 block lg:hidden" src={mobileLogo} alt="" />
           </Link>
         </div>
-        <div className="!flex lg:hidden">
+        <div className="flex lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
